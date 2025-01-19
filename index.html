@@ -28,8 +28,9 @@
       }
 
       a {
-        display: inline-block;
         padding: 45px 60px;
+        width: 80px;
+        height: 50px;
         font-size: 16px;
         margin-bottom: 20px;
         color: #fff;
@@ -38,10 +39,21 @@
         border-radius: 5px;
         cursor: pointer;
         transition: background-color 0.3s;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .button-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
       }
 
       .button-container a {
         color: #fff;
+
         text-decoration: none;
         font-weight: 700;
       }
