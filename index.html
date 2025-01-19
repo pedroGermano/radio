@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple Site</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        height: 100vh;
+        background: url("bg.jpeg") no-repeat center center fixed;
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: Arial, sans-serif;
+      }
+
+      .content {
+        width: 1510px;
+        height: 510px;
+        background: rgba(255, 255, 255, 0.9);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 8px;
+      }
+
+      a {
+        display: inline-block;
+        padding: 45px 60px;
+        font-size: 16px;
+        margin-bottom: 20px;
+        color: #fff;
+        background-color: #007bff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+      }
+
+      .button-container a {
+        color: #fff;
+        text-decoration: none;
+        font-weight: 700;
+      }
+
+      .button-container a:hover {
+        background-color: #0056b3;
+      }
+
+      @media (max-width: 768px) {
+        .content {
+          width: 410px;
+          height: 410px;
+        }
+        .button-container button {
+          font-size: 14px;
+          padding: 12px 25px;
+        }
+      }
+
+      @media (max-width: 480px) {
+        .content {
+          width: 200px;
+          height: 200px;
+          background-color: transparent;
+        }
+        .button-container {
+          gap: 15px;
+        }
+
+        .button-container button {
+          font-size: 12px;
+          padding: 10px 20px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="content">
+      <div class="button-container">
+        <a
+          href="https://player.srvsh.com.br/player-web/8076/000000"
+          target="_blank"
+        >
+          CEDRO</a
+        >
+        <a href="https://player.srvsh.com.br/player-web/7580" target="_blank"
+          >QUIXERAMOBIM</a
+        >
+        <br />
+        <a
+          href="https://player.srvsh.com.br/player-web/8076/000000"
+          target="_blank"
+          >Button 2</a
+        >
+        <a
+          href="https://player.srvsh.com.br/player-web/8076/000000"
+          target="_blank"
+          >Button 2</a
+        >
+      </div>
+    </div>
+  </body>
+</html>
